@@ -1,11 +1,13 @@
-var http = require('http');
+{
+  "name": "hello-s2i-nodejs",
+  "version": "1.0.0",
+  "description": "Testing web application via s2i",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 
-
-
-http.createServer(function (req, res) {
-
-  res.writeHead(200, {'Content-Type': 'text/html'});
-
-  res.end('Hello World!');
-
-}).listen(8080); 
